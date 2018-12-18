@@ -1,10 +1,22 @@
-module Brands.Leibniz exposing (Eq, EqB(..), Leibniz(..), cast, cong, inj, prj, refl, runLeibniz, subst, symm, trans)
+module Brands.Leibniz exposing
+    ( Eq
+    , EqB(..)
+    , Leibniz(..)
+    , cast
+    , cong
+    , inj
+    , prj
+    , refl
+    , runLeibniz
+    , subst
+    , symm
+    , trans
+    )
 
 import Brands exposing (..)
 import Brands.Embed as Embed exposing (..)
 import Brands.Flip as Flip exposing (..)
 import Brands.Id as Id exposing (..)
-import Brands.Unsafe exposing (..)
 
 
 type Leibniz f a b
