@@ -1,12 +1,17 @@
-module Brands.Unsafe exposing (..)
+module Brands.Unsafe exposing (inj, prj)
 
 import Brands exposing (..)
-import Native.Unsafe
+
+
+
+--import Native.Unsafe
+
 
 inj : a -> App f b
 inj =
-  Native.Unsafe.coerce
+    Debug.todo "Native.Unsafe.coerce"
+
 
 prj : App f b -> a
 prj =
-  Native.Unsafe.coerce
+    Debug.todo "Native.Unsafe.coerce"
